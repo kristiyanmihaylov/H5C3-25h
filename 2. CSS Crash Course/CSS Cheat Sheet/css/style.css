@@ -72,6 +72,8 @@ a:active{
     padding: 0;
     list-style: square;
 }
+/*how to include a image and then work it on Photoshop*/
+/*1st put it then 2nd work it on photoshop & review site*/
 .categories li{
     padding-bottom: 8px;
     border-bottom: dotted 1px #333;
@@ -92,6 +94,7 @@ a:active{
     width: 100%;
 }
 
+/*how to select an exact specific thing from a form*/
 .my-form input[type='submit']{
     background-color: #333333;
     color:white;
