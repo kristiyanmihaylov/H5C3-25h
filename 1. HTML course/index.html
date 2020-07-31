@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CHEAT SHEET</title>
+    </head>
+    <body>
+        <a href="blog.html">Go to Blog</a>
+        <hr>
+        <!--Headings-->
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+        
+        <!--Paragraphs-->
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Architecto ipsum <strong>reprehenderitstrong dolore, commodi abreprehenderitstrong</strong>  magnam alias 
+        voluptate sequi possimus accusamus dolore, commodi abreprehenderitstrong
+         labore
+         sed itaque sit hic <em>Praesentium</em>? Liure vitae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet <a href="http://https://google.com/" target='_blank'>reprehenderit</a>  adipisicing elit. 
+        Architecto ipsum mollitia  magnam alias 
+        voluptate sequi possimus accusamus dolore, commodi ab
+         labore
+         sed itaque sit hic molestias? Praesentium, iure vitae.
+        </p>
+        
+        <!--Lists-->
+        
+        <ul> <!--Navigation Bar used for-->
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ul>
+        <ol> <!--Simple Lists used for-->
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ol>
+        
+        <!--Tables are used for LIST OF DATA ONLY-->
+        <!--CSS is used for layout-->
+        
+        <table>
+            <thead>
+                <tr><!--Table Row-->
+                <th>Name</th><!--Tags for Head-->    
+                <th>Email</th>
+                <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Brad Traversy</td><!--Tags for Body-->
+                    <td>brad@something.com</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>John Traversy</td><!--Tags for Body-->
+                    <td>john@something.com</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Sarah Traversy</td><!--Tags for Body-->
+                    <td>satah@something.com</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!--Forms-->
+        <hr>
+        <br>
+        <form action="process.php" method="POST"> <!--Add data to a file-->
+            <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name='firstName' placeholder="Enter first name"> <!--Use camelCase-->
+            </div>
+            <br>
+            <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name='lastName'>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div> <!--good for big texts to include-->
+            <br>
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select> <!--good for to select adn options-->
+            </div>
+            <br>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" value='30'>
+            </div>
+            <br>
+            <div>
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" id="submit" value='Submit'>
+        </form>
+
+        <!--Button-->
+
+        <button>Click me</button><!--to hook to do smth I need Javascript as a function-->
+
+        <!--Images-->
+        <br>
+        <a href="images/sample.jpg"> <!--link on a image-->
+        <img src="images/sample.jpg" alt="just a bird" width="200">
+        </a>
+
+        <div style='margin-top: 500px;'></div>
+
+        <!--Quotations-->
+
+        <blockquote cite="http://traversymedia.com">
+            Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. Ducimus dolorem eius 
+            harum mollitia ipsum, dolore eveniet 
+            aliquam veritatis, aperiam perspiciatis 
+            reprehenderit? Placeat tempora, id culpa 
+            inventore vitae quibusdam sunt facere.
+        </blockquote>
+        <p>The <abbr title='World Wide Web'>WWW</abbr> is awesome</p>
+
+        <p><cite>HTML Crash course</cite> is awesome</p>
+    </body>
+</html>
