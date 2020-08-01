@@ -13,14 +13,170 @@ body{
     down is a shorter version to use*/
     font: normal 16px Arial,Helvetica, sans-serif;
     line-height: 1.6em;
+    margin: 0;
 }
+
+a{
+    color:black;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:green;
+}
+
 
 .container{
     width: 80%;/*use % when dealing with containers*/
     margin: auto;
 }
 
-.box-1{
+.button{
     background-color: #333333;
+    color:white;
+    padding: 10px 15px;
+    border: none;
+}
+.button:hover{
+    background: darkgoldenrod;
+    color: white;
 }
 
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: #333333;
+    color: #fff;
+
+    border-right: 5px red solid;
+    /*pick all borders or 1 particular border: 5px red solid */
+    border-width: 3px; /*can work with particular border*/
+    border-right-style: dotted;
+    padding: 20px; /*gives 20px all around*/
+    margin: 20px 0;/*20px top & botton*/
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+    text-align: center;
+}
+
+.box-2{
+    border: 5px dotted lightgray;
+    padding: 30px 0;
+    margin: 30px 0;
+}
+.categories{
+    border:5 px solid black;
+    padding: 10px;
+    border-radius: 15px;
+}
+.categories h2{
+    text-align: center;
+}
+.categories ul{
+    padding: 0;
+    list-style: square;
+}
+/*how to include a image and then work it on Photoshop*/
+/*1st put it then 2nd work it on photoshop & review site*/
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+.my-form label{
+    display: block;
+}
+.my-form input[type='text'],.my-form textarea {
+    padding: 8px;
+    width: 100%; /*better to be responsive*/
+}
+
+/*how to select an exact specific thing like a radio from a form*/
+
+.block {
+    float: left;
+    width: 33.3%; /*to stack block at 1 row*/
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: darkgray;
+    color:white;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 3px dotted gray;
+}
+
+.p-box{ /*static*/
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+    background-image: url(../images/bgimage.jpg);/*add image*/
+    background-position: 100px 200px;
+    background-repeat: no-repeat; /*no repeating image*/
+    background-position: center center; /*horizontal & vertical*/
+
+}
+
+.p-box h1{ /* its coming down 40 px from the top
+    as there is no parent element*/
+    position: absolute;
+    top: 40px;
+}
+
+.p-box h1{/* this is how to move it from the div element*/
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+.p-box h2{
+    position: absolute;/*good when games building*/
+    bottom: 40px;
+    right: 100px;
+}
+.fix-me{
+    position: fixed; /*cool for contact info & social media*/
+    top: 400px;
+}
+
+.my-list li:first-child{ /*preudo elements*/
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(6){ /*target specific or even/odd*/
+    background: yellow;
+}
