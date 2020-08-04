@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        .wrapper div{ 
+            background: #eeeeee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd){/*every odd div element*/
+            background: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+
+    </div>
+</body>
+</html>
